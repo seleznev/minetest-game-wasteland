@@ -82,8 +82,8 @@ minetest.register_tool("default:pick_wood", {
 				[default.dig.netherrack] = 0.3,
 				[default.dig.netherbrick] = 1.5,
 				[default.dig.brick] = 1.5,
-				[default.dig.pressure_plate_stone] = 0.4,
-			}, uses=60/3}
+				[default.dig.stonebrick] = 6,
+			}, uses=60/3, maxlevel=1}
 		),
 		full_punch_interval = 1,
 		damage_groups = {fleshy=1},
@@ -108,8 +108,8 @@ minetest.register_tool("default:pick_stone", {
 				[default.dig.netherrack] = 0.15,
 				[default.dig.netherbrick] = 0.75,
 				[default.dig.brick] = 0.75,
-				[default.dig.pressure_plate_stone] = 0.2,
-			}, uses=132/3}
+				[default.dig.stonebrick] = 3,
+			}, uses=132/3, maxlevel=1}
 		),
 		full_punch_interval = 1,
 		damage_groups = {fleshy=1},
@@ -139,8 +139,8 @@ minetest.register_tool("default:pick_iron", {
 				[default.dig.netherbrick] = 0.5,
 				[default.dig.redstone_ore] = 0.75,
 				[default.dig.brick] = 0.5,
-				[default.dig.pressure_plate_stone] = 0.15,
-			}, uses=251/3}
+				[default.dig.stonebrick] = 2,
+			}, uses=251/3, maxlevel=2}
 		),
 		full_punch_interval = 1,
 		damage_groups = {fleshy=1},
@@ -171,8 +171,8 @@ minetest.register_tool("default:pick_diamond", {
 				[default.dig.netherbrick] = 0.4,
 				[default.dig.redstone_ore] = 0.6,
 				[default.dig.brick] = 0.4,
-				[default.dig.pressure_plate_stone] = 0.1,
-			}, uses=1562/3}
+				[default.dig.stonebrick] = 1.6,
+			}, uses=1562/3, maxlevel=3}
 		),
 		full_punch_interval = 1,
 		damage_groups = {fleshy=1},
@@ -195,8 +195,8 @@ minetest.register_tool("default:pick_gold", {
 				[default.dig.netherrack] = 0.05,
 				[default.dig.netherbrick] = 0.25,
 				[default.dig.brick] = 0.25,
-				[default.dig.pressure_plate_stone] = 0.1,
-			}, uses=33/3}
+				[default.dig.stonebrick] = 1,
+			}, uses=33/3, maxlevel=2}
 		),
 		full_punch_interval = 1,
 		damage_groups = {fleshy=1},
